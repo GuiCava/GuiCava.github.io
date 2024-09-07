@@ -8,8 +8,8 @@
 
 <h1>Você é um Macaco?</h1>
 
-<button id="sim" onclick="abrirArquivo()">Sim</button>
-<button id="nao" onclick="abrirArquivo()" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
+<button id="sim" onclick="abrirLinks()">Sim</button>
+<button id="nao" onclick="abrirLinks()" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
 
 <script>
     function mudarTexto(botao) {
@@ -20,8 +20,13 @@
         botao.textContent = "Não";
     }
 
-    function abrirArquivo() {
+    function abrirLinks() {
+        
+        window.open("https://guicava.github.io/WhatsApp%20Audio%202024-09-07%20at%2014.58.53.mp3", "_blank");
+
+        
         window.open("https://guicava.github.io/Certeza.html", "_blank");
+
     }
 </script>
 
