@@ -8,22 +8,22 @@
 
 <h1>Você é um Macaco?</h1>
 
-<button id="sim">Sim</button>
-<button id="nao" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
+<button id="sim" onclick="abrirArquivo()">Sim</button>
+<button id="nao" onclick="abrirArquivo()" onmouseover="mudarTexto(this)" onmouseout="voltarTexto(this)">Não</button>
 
-    <script>
-        function mudarTexto(botao) {
-            botao.textContent = "Sim";
-        }
+<script>
+    function mudarTexto(botao) {
+        botao.textContent = "Sim";
+    }
 
-        function voltarTexto(botao) {
-            botao.textContent = "Não";
-        }
-    </script>
-    
-    <script>
-        
+    function voltarTexto(botao) {
+        botao.textContent = "Não";
+    }
 
+    function abrirArquivo() {
+        window.open("https://guicava.github.io/Certeza.html", "_blank");
+    }
+</script>
 
 </body>
 </html>
